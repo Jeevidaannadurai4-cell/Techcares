@@ -1,0 +1,55 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TechCare Login Support</title><style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#eaf4ff;background:#071426;min-height:100vh}body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 15% 15%,#14506d,transparent 32%),radial-gradient(circle at 85% 20%,#3b2260,transparent 32%),linear-gradient(90deg,#ffffff06 1px,transparent 1px),linear-gradient(#ffffff06 1px,transparent 1px);background-size:auto,auto,40px 40px,40px 40px}nav{padding:18px 7%;display:flex;justify-content:space-between;border-bottom:1px solid #ffffff14;background:#071426cc;position:sticky;top:0;z-index:5}.logo{font-size:24px;font-weight:800}.logo span{color:#48d7ff}.tag{color:#8fa8c2;font-size:13px}.wrap{width:min(1150px,90%);margin:auto}.hero{padding:80px 0 40px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}.badge{padding:8px 13px;border:1px solid #48d7ff44;background:#48d7ff10;border-radius:30px;color:#70e1ff;font-size:13px;display:inline-block}h1{font-size:clamp(42px,6vw,70px);line-height:1.02;margin:18px 0}.grad{background:linear-gradient(90deg,#fff,#5ee0ff,#ad8aff);color:transparent;background-clip:text}.hero p{color:#a5b8cd;line-height:1.7;font-size:17px}.actions{display:flex;gap:12px;margin-top:25px}.btn{padding:13px 19px;border:0;border-radius:12px;font-weight:700;cursor:pointer}.primary{background:linear-gradient(135deg,#20cfff,#756cff);color:white}.secondary{background:#ffffff0c;color:#eaf4ff;border:1px solid #ffffff18}.panel{background:#0d2037cc;border:1px solid #ffffff12;border-radius:22px;box-shadow:0 20px 70px #0005}.card{padding:24px}.small,.muted{color:#8fa7c0;font-size:13px}.small{text-transform:uppercase;letter-spacing:1px}.status{padding:14px;margin-top:10px;background:#ffffff08;border-radius:12px;display:flex;justify-content:space-between}.dot{display:inline-block;width:8px;height:8px;background:#48e5a5;border-radius:50%;margin-right:8px}.metrics,.issues,.flow{display:grid;gap:16px}.metrics{grid-template-columns:repeat(3,1fr);margin:20px 0}.metric{padding:23px}.metric b{font-size:31px;display:block}.metric span{color:#8fa7c0;font-size:13px}section{padding:50px 0}h2{font-size:32px;margin:0 0 8px}.sub{color:#8fa7c0}.issues{grid-template-columns:repeat(3,1fr);margin-top:22px}.issue{padding:20px;cursor:pointer;transition:.2s}.issue:hover{transform:translateY(-4px);border-color:#48d7ff55}.icon{font-size:25px}.issue h3{margin:10px 0 7px}.issue p{color:#8fa7c0;font-size:14px;line-height:1.5}.response{padding:24px;margin-top:18px;display:none}.response.show{display:block}.response p{color:#a9bad0;line-height:1.7}.flow{grid-template-columns:repeat(6,1fr);margin-top:20px}.step{padding:18px;text-align:center}.step strong{display:block;margin-bottom:7px}.step span{font-size:12px;color:#8fa7c0}.banner{padding:25px;display:flex;justify-content:space-between;align-items:center;gap:20px}.banner p{color:#8fa7c0}.faq{padding:0 22px}.q{padding:17px 0;border-bottom:1px solid #ffffff12;cursor:pointer;font-weight:700;position:relative}.a{display:none;color:#91a6be;line-height:1.6;padding:10px 0}.open .a{display:block}footer{text-align:center;color:#71869f;padding:35px}.chat{position:fixed;right:22px;bottom:22px}.chatbtn{width:58px;height:58px;border:0;border-radius:50%;background:linear-gradient(135deg,#20cfff,#756cff);color:#fff;font-size:23px}.chatbox{display:none;position:absolute;right:0;bottom:70px;width:320px;padding:18px}.chatbox.show{display:block}.chatbox input{width:68%;padding:10px;background:#071426;color:#fff;border:1px solid #ffffff18;border-radius:9px}.chatbox button{padding:10px;border:0;border-radius:9px;background:#48d7ff}.reply{font-size:13px;color:#b8c8d9;margin-top:12px;line-height:1.5}@media(max-width:850px){.hero{grid-template-columns:1fr}.issues{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr 1fr}}@media(max-width:560px){.metrics,.issues,.flow{grid-template-columns:1fr}.tag{display:none}}
+</style></head><body>
+<nav><div class="logo">Tech<span>Care</span></div><div class="tag">Customer Support Automation • Login Help</div></nav>
+<main class="wrap"><section class="hero"><div><span class="badge">AI-Assisted Technical Support</span><h1>Fix login issues <span class="grad">faster.</span></h1><p>A professional simulated customer-support interface for common login problems.</p><div class="actions"><button class="btn primary" onclick="document.getElementById('issues').scrollIntoView({behavior:'smooth'})">Start Support</button><button class="btn secondary" onclick="document.getElementById('flow').scrollIntoView({behavior:'smooth'})">View Workflow</button></div></div><div class="panel card"><div class="small">Support system status</div><div class="status"><span><i class="dot"></i>Automation online</span><b>99.9%</b></div><div class="status"><span>Average response</span><b>&lt;1 sec</b></div><div class="status"><span>Human support</span><b>Available</b></div></div></section>
+<div class="metrics"><div class="panel metric"><b>6+</b><span>Common login queries</span></div><div class="panel metric"><b>5+</b><span>Workflow stages</span></div><div class="panel metric"><b>24/7</b><span>Automated guidance</span></div></div>
+<section id="issues"><h2>Choose your login problem</h2><p class="sub">Click a support card to simulate the automated response.</p><div class="issues">
+<div class="panel issue" onclick="show('login')"><div class="icon">🔐</div><h3>Can't login</h3><p>General account login problem.</p></div><div class="panel issue" onclick="show('password')"><div class="icon">🔑</div><h3>Forgot password</h3><p>Help with resetting your password.</p></div><div class="panel issue" onclick="show('wrong')"><div class="icon">⚠️</div><h3>Password not working</h3><p>Credentials are being rejected.</p></div><div class="panel issue" onclick="show('locked')"><div class="icon">🔒</div><h3>Account locked</h3><p>Too many attempts or security lock.</p></div><div class="panel issue" onclick="show('otp')"><div class="icon">📱</div><h3>OTP not received</h3><p>Login verification code is missing.</p></div><div class="panel issue" onclick="show('still')"><div class="icon">🛠️</div><h3>Still can't login</h3><p>Problem continues after reset.</p></div></div>
+<div id="response" class="panel response"><h3 id="rt"></h3><p id="rp"></p></div></section>
+<section id="flow">
+  <h2>Automation Workflow</h2>
+  <p class="sub">Follow the step-by-step support automation process below.</p>
+
+  <div class="flow">
+    <div class="panel step">
+      <strong>01</strong>
+      <span>Customer Query</span>
+    </div>
+
+    <div class="panel step">
+      <strong>02</strong>
+      <span>Identify Problem</span>
+    </div>
+
+    <div class="panel step">
+      <strong>03</strong>
+      <span>Select Type</span>
+    </div>
+
+    <div class="panel step">
+      <strong>04</strong>
+      <span>Automated Solution</span>
+    </div>
+
+    <div class="panel step">
+      <strong>05</strong>
+      <span>Check Result</span>
+    </div>
+
+    <div class="panel step">
+      <strong>06</strong>
+      <span>Human Support</span>
+    </div>
+  </div>
+</section>
+<section id="flow">
+<h2>Automation workflow</h2>
+<p class="sub">Follow the step-by-step support automation process below.</p>
+<section><h2>Quick FAQ</h2><p class="sub">Common support guidance.</p><div class="panel faq"><div class="q" onclick="faq(this)">Is this automated support? <span>+</span><div class="a">Yes. This prototype simulates automated responses for common technical login problems.</div></div><div class="q" onclick="faq(this)">What if automation fails? <span>+</span><div class="a">Move the customer to human support.</div></div><div class="q" onclick="faq(this)">Should I share my OTP or password? <span>+</span><div class="a">No. Never share passwords or OTPs through support chat.</div></div></div></section></main>
+<footer>TechCare • Customer Support Automation Prototype • Skill Development Cell</footer>
+<div class="chat"><button class="chatbtn" onclick="chat()">💬</button><div id="cb" class="panel chatbox"><h3>TechCare Assistant</h3><p class="muted">Describe your login issue. Do not share passwords or OTPs.</p><input id="ci" placeholder="e.g. forgot password"><button onclick="reply()">Send</button><div id="cr" class="reply"></div></div></div>
+<script>
+const d={login:["Can't login","Check your registered username/email and password. If correct, use the password-reset option. If the problem continues, contact human support."],password:["Forgot password","Select Forgot Password, enter your registered email/phone, and follow the official reset instructions."],wrong:["Password not working","Check that Caps Lock is off and that you are using the correct account. Avoid repeated attempts and use password recovery if needed."],locked:["Account locked","Your account may be temporarily locked after repeated unsuccessful attempts. Follow the official account-recovery process."],otp:["OTP not received","Check your network connection and registered phone/email. Wait briefly and request a new OTP if available. Never share your OTP."],still:["Still can't login","If password recovery did not solve the issue, keep the non-sensitive error message and contact human support."]};
+function show(k){rt.textContent=d[k][0];rp.textContent=d[k][1];response.classList.add('show');response.scrollIntoView({behavior:'smooth',block:'center'})}function faq(x){x.classList.toggle('open')}function chat(){cb.classList.toggle('show')}function reply(){let q=ci.value.toLowerCase(),a="Please select a login support category above.";if(q.includes('forgot')||q.includes('password'))a=d.password[1];else if(q.includes('otp'))a=d.otp[1];else if(q.includes('lock'))a=d.locked[1];else if(q.includes('login')||q.includes('sign in'))a=d.login[1];cr.textContent=a}
+</script></body></html>
